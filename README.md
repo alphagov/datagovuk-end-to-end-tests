@@ -6,10 +6,12 @@ End to end tests for Publish & Find Beta.
 
 ```
 bundle install
+
 ```
 
 then ...
 
+
 ```
-rspec
+./run.sh
 ```
