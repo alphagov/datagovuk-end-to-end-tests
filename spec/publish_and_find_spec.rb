@@ -1,20 +1,13 @@
 require 'spec_helper'
 
-describe 'Something' do
-  it 'does something cool' do
-    # This does not work - you get a 301 redirect
-    # visit('http://test-user:nefPvbyVKJPzu9mnX8gVCzd3HZv6U8@test.data.gov.uk')
-
-    # This works ok 
-    # visit('http://publisher@example.com:gnocchi@publish-data-beta-staging.cloudapps.digital')
+describe 'Creating a dataset on Publish Beta' do
+  it 'can be found on Find Beta' do
     description = 'My test description'
     summary = 'My test summary'
     location = 'London'
-    # publish_url = ENV['PUBLISH_URL'] 
-    # find_url = ENV['FIND_URL']
+    publish_url = ENV['PUBLISH_URL'] 
+    find_url = ENV['FIND_URL']
 
-    publish_url = 'http://localhost:3000' 
-    find_url = 'http://localhost:4000'
     date = Time.now 
     title = "My test dataset #{date}" 
 
